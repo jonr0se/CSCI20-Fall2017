@@ -1,38 +1,38 @@
 An algorithm for a simple number guessing game.
 
-Start with number 1 through 50 displayed on screen.
+The computer chooses any number X and any number Y. The numbers must be different.
 
-The computer will choose a random number between 1 and 50.
+The computer will then choose a random number between X and Y.
 
-In this case, the computer chooses the number 1.
+In this case, the computer chooses exactly the number Y.
 
 An alert says: THE USER HAS 10 POINTS!
 
-The user guesses the number 50.
+The user guesses a number but it is higher than Y.
 
 An alert says: THE NUMBER IS LOWER!
 
 An alert says: THE USER HAS 9 POINTS!
 
-The user guesses the number 25.
+The user guesses a number but it is still higher than Y.
 
 An alert says: THE NUMBER IS LOWER!
 
 An alert says: THE USER HAS 8 POINTS!
 
-The user guesses the number 5.
+The user guesses a number but it is lower than Y.
 
-An alert says: THE NUMBER IS LOWER!
+An alert says: THE NUMBER IS HIGHER!
 
 An alert says: THE USER HAS 7 POINTS!
 
-The user guesses the number 3.
+The user guesses a number but it is still too low.
 
-An alert says: THE NUMBER IS LOWER!
+An alert says: THE NUMBER IS HIGHER!
 
 An alert says: THE USER HAS 6 POINTS!
 
-The user correctly guesses the number 1.
+The user correctly guesses the number Y.
 
 An alert says: THE USER'S GUESS WAS CORRECT!
 
