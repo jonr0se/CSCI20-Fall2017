@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main(){
-    cout << "                        _ " << endl; 
+    cout << "                       __ " << endl; 
     cout << "                       | \\" << endl; 
     cout << "                       | |" << endl; 
     cout << "                       | |" << endl; 
