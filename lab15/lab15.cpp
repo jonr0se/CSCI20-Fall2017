@@ -44,7 +44,7 @@ CSCI 020
             
             string secondadj; // string var secondadj
             cout << "Type an adjective please: "; // display this text
-            cin >> firstadj; // input var secondadj
+            cin >> secondadj; // input var secondadj
             
             string secondnoun; // string var secondnoun
             cout << "Type a noun please: "; // display this text
@@ -53,8 +53,8 @@ CSCI 020
             
             
             
-            cout << "One time I was " << firstverb << " and I " << secondverb << " a " << firstadj << " " << firstnoun << "! ";
-            cout << "The next day I " << thirdverb << " and " << fourthverb << " on a " << secondadj << "" << secondnoun <<". ";
+            cout << "One time I was " << firstverb << " and I " << secondverb << " (on) a " << firstadj << " " << firstnoun << "! ";
+            cout << "The next day I " << thirdverb << " and " << fourthverb << " (on) a " << secondadj << " " << secondnoun <<". ";
             
             
             /*
