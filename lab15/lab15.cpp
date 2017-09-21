@@ -18,43 +18,43 @@ CSCI 020
         
         int main() // int main
         {
-            string firstverb; // string var firstverb
+            string first_verb=""; // string var firstverb
             cout << "Type a verb ending with -ing: "; // displays this text
-            cin >> firstverb; // input var firstverb
+            cin >> first_verb; // input var firstverb
             
-            string secondverb; // string var secondverb
+            string second_verb=""; // string var secondverb
             cout << "Type a verb ending with -ed: "; // display this text
-            cin >> secondverb; // input var secondverb
+            cin >> second_verb; // input var secondverb
             
-            string firstadj; // string var firstadj
+            string first_adj=""; // string var firstadj
             cout << "Type an adjective please: "; // display this text
-            cin >> firstadj; // input var firstadj
+            cin >> first_adj; // input var firstadj
             
-            string firstnoun; // string var firstnoun
+            string first_noun=""; // string var firstnoun
             cout << "Type a noun please: "; // display this text
-            cin >> firstnoun; // input var firstnoun
+            cin >> first_noun; // input var firstnoun
             
-            string thirdverb; // string var thirdverb
+            string third_verb=""; // string var thirdverb
             cout << "Type a verb in the past tense: "; // displays this text
-            cin >> thirdverb; // input var firstverb
+            cin >> third_verb; // input var firstverb
             
-            string fourthverb; // string var fourthverb
+            string fourth_verb=""; // string var fourthverb
             cout << "Type a verb in the past tense: "; // displays this text
-            cin >> fourthverb;
+            cin >> fourth_verb;
             
-            string secondadj; // string var secondadj
+            string second_adj=""; // string var secondadj
             cout << "Type an adjective please: "; // display this text
-            cin >> secondadj; // input var secondadj
+            cin >> second_adj; // input var secondadj
             
-            string secondnoun; // string var secondnoun
+            string second_noun=""; // string var secondnoun
             cout << "Type a noun please: "; // display this text
-            cin >> secondnoun; // input var secondnoun
+            cin >> second_noun; // input var secondnoun
             
             
             
             
-            cout << "One time I was " << firstverb << " and I " << secondverb << " (on) a " << firstadj << " " << firstnoun << "! ";
-            cout << "The next day I " << thirdverb << " and " << fourthverb << " (on) a " << secondadj << " " << secondnoun <<". ";
+            cout << "One time I was " << first_verb << " and I " << second_verb << " (on) a " << first_adj << " " << first_noun << "! ";
+            cout << "The next day I " << third_verb << " and " << fourth_verb << " (on) a " << second_adj << " " << second_noun <<". ";
             
             
             /*

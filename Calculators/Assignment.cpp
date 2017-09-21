@@ -74,7 +74,7 @@ int main(){
     jetD.acceleration = (jetD.velocity*jetD.velocity)/(2)*jetD.distance;
     jetD.TIME = (2*jetD.distance)/jetD.velocity;
     
-    cout << "Type velocity, then distance: ";
+    cout << "Type velocity, press enter, then type distance: ";
   
     
     cin >> jetE.velocity;
@@ -86,3 +86,14 @@ int main(){
     
     cout <<"Jet A is: " << jetA.TIME <<" Jet B is: "<< jetB.TIME << " Jet C is: " << jetC.TIME <<" Jet D is: "<< jetD.TIME << " Jet E is: "<< jetE.TIME;
     }
+    
+    /*
+    
+    Running /home/ubuntu/workspace/Calculators/Assignment.cpp
+    Type velocity, then distance: 50
+    100
+    Jet A is: 2.38961 Jet B is: 18.1818 Jet C is: 2.18182 Jet D is: 51.8519 Jet E is: 4
+
+    Process exited with code: 0
+
+    */

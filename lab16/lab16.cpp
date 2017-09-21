@@ -1,3 +1,7 @@
+//Jon Rose
+//April Browne
+//CSCI 020
+//9/20/2017
 /*
 Create a struct for holding a stock portfolio.  It should hold the following information about stocks: stock name, sector, current share price, and number of shares owned.  
 The stock sector is a single character which specifies the type of company, according to the following code: 
