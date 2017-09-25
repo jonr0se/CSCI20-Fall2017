@@ -1,14 +1,16 @@
-/* Asks for 5 different variables.
+/* 
+Jon Rose
+April Browne
+CSCI 020
+9/11/2017
+
+Asks for 5 different variables.
 It must be at least one paragraph long (you may make it up or use a premade one).
 Initialize the variables to a default of your choice.  These can either be the appropriate word OR something completely ridiculous.
 There is no input for this assignment
 Output the paragraph of mad libs with your variable values correctly embedded in the mad lib.  Format it so it is readable.
 
-Jon Rose
-
-April Browne
-CSCI 020
-9/11/2017
+The purpose of this lab is to create a MadLib template and make it work with inputs and outputs.
 */
 
         #include <iostream> // io stream embedded comments
@@ -53,8 +55,8 @@ CSCI 020
             
             
             
-            cout << "One time I was " << first_verb << " and I " << second_verb << " (on) a " << first_adj << " " << first_noun << "! ";
-            cout << "The next day I " << third_verb << " and " << fourth_verb << " (on) a " << second_adj << " " << second_noun <<". ";
+            cout << "One time I was " << first_verb << " and I " << second_verb << " (on) a " << first_adj << " " << first_noun << "! "; // better vars
+            cout << "The next day I " << third_verb << " and " << fourth_verb << " (on) a " << second_adj << " " << second_noun <<". ";  // better vars
             
             
             /*
@@ -66,7 +68,7 @@ CSCI 020
             Type a noun please: road
             One time I was biking and I biked a red road! 
 
-*/
+            */
             
             
             
