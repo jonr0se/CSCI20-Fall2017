@@ -54,43 +54,84 @@ NOTE: it doesn't have to line up perfectly.
         #include <iostream> // embedded comments iostream
         #include <string>  // string
         using namespace std; // name space std
-        
+        struct Stock{
+            string name;
+            double initial_balance;
+            string sector;
+            int num_shares;
+            
+        };
         int main()  // int main
         {
-            double start_balance, balance, rate, contributions, goal;  // double for decimals
-            int years = 0;   // int years is 0
+            Stock company_ford;
+            Stock company_albert;
+            Stock company_apple;
+            Stock company_tesla;
+            Stock company_wellsfargo;
+            Stock company_userinput;
             
-            string name; // string name
-            cout << "Please enter the name of the company: "; // display this text and ask for input
-            cin >> name;  // cin name run input
+            company_ford.name = "FordM";
+            company_ford.initial_balance = 18.76;
+            company_ford.sector = "A";
+            company_ford.num_shares = 87;
             
-            string sector;  // string sector
-            cout << "Please enter the sector of the company (A,C,F,I,T): ";   // display this text wait for user input
-            cin >> sector;  // cin sector run input
+            double ford_balance = company_ford.initial_balance*company_ford.num_shares;
+           
+            company_albert.name = "Albertsn";
+            company_albert.initial_balance = 34.39;
+            company_albert.sector = "C";
+            company_albert.num_shares = 542;
             
-            cout << "Enter the initial investment amount: "; // display this text and wait for user input
-            cin >> start_balance;   // cin start_balance put input in
+            double albert_balance = company_albert.initial_balance*company_albert.num_shares;
             
-            cout << "Enter the yearly contribution (can be 0): "; // display this text
-            cin >> contributions; // cin contributions
+            company_apple.name = "AAPL";
+            company_apple.initial_balance = 145.91;
+            company_apple.sector = "T";
+            company_apple.num_shares = 5;
             
-            cout << "Enter the interest rate (usually 0-5): "; // dsplay this text
-            cin >> rate; // cin rate
+            double apple_balance = company_apple.initial_balance*company_apple.num_shares;
             
-            cout << "What is your monetary goal: "; // display this text
-            cin >> goal;  // cin goal
+            company_tesla.name = "TSLA";
+            company_tesla.initial_balance = 375.64;
+            company_tesla.sector = "A";
+            company_tesla.num_shares = 50;
             
-            balance = start_balance; // balance = start_balance
+            double tesla_balance = company_tesla.initial_balance*company_tesla.num_shares;
+            
+            company_wellsfargo.name = "TSLA";
+            company_wellsfargo.initial_balance = 375.64;
+            company_wellsfargo.sector = "A";
+            company_wellsfargo.num_shares = 50;
+            
+            double wellsfargo_balance = company_wellsfargo.initial_balance*company_wellsfargo.num_shares;
+            
+            cout << "Enter the company name: "<<endl;
+            cin >> company_userinput.name;
+            
+            cout << "Enter the starting balance: "<< endl;
+            cin >> company_userinput.initial_balance;
+            
+            cout << "Enter the company sector: "<<endl;
+            cin >> company_userinput.sector;
+            
+            cout << "Enter the number of shares:  "<<endl;
+            cin >> company_userinput.num_shares;
+            
+            double userinput_balance = company_userinput.initial_balance*company_userinput.num_shares;
+            
+            cout << "Company name: "<<"Stock price:"<< " Sector:"<< " Number of shares:"<< " Total value:"<< endl;
+            cout << company_ford.name <<"        "<< company_ford.initial_balance <<"    "<< company_ford.sector<<"    "<< company_ford.num_shares<<"    " << ford_balance << endl;
+            cout << company_albert.name << company_albert.initial_balance << company_albert.sector<< company_albert.num_shares << albert_balance;
+            
+        
+           
             
             
-            while (balance<goal) // while statement balance is less than goal
-            {
-                years++; // years++ math
-                double interest = balance * (rate/100); // math to calculate interest
-                balance = balance + interest + contributions; // final balance math
-            }
-            // display the text below as the final output of user's input in a single sentence
-            cout << "It will take " << name << " " << "("<<sector<<")" << " " <<  years << " year(s) to reach your goal of " << goal << " dollars. " << endl;
+            
+            
+          
+            
+    
         }
         
         /*
