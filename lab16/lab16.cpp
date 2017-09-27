@@ -58,7 +58,7 @@ NOTE: it doesn't have to line up perfectly.
             string name;
             double initial_balance;
             string sector;
-            int num_shares;
+            double num_shares;
             
         };
         int main()  // int main
@@ -118,7 +118,7 @@ NOTE: it doesn't have to line up perfectly.
             cin >> company_userinput.num_shares;
             
             double userinput_balance = company_userinput.initial_balance*company_userinput.num_shares;
-            
+            double total_value = ford_balance + albert_balance + apple_balance + tesla_balance + wellsfargo_balance + userinput_balance;
             cout << "Company name: "<<"Stock price:"<< " Sector:"<< " Number of shares:"<< " Total value:"<< endl;
             
             cout << company_ford.name <<"          "<< company_ford.initial_balance <<"         "<< company_ford.sector<<"          "<< company_ford.num_shares<<"              " << ford_balance << endl;
@@ -133,8 +133,8 @@ NOTE: it doesn't have to line up perfectly.
             
             cout << company_userinput.name <<"            "<<  company_userinput.initial_balance <<"           "<<  company_userinput.sector<<"          "<<  company_userinput.num_shares <<"               "<<  userinput_balance<< endl;
            
-            
-            
+            cout << "Final total: " << endl;
+            cout << total_value << endl;
             
         
          }
@@ -142,11 +142,11 @@ NOTE: it doesn't have to line up perfectly.
         /*
         Running /home/ubuntu/workspace/lab16/lab16.cpp
         Enter the company name: 
-        Fly
+        FLY
         Enter the starting balance: 
-        500 
+        400
         Enter the company sector: 
-        Y
+        W
         Enter the number of shares:  
         2
         Company name: Stock price: Sector: Number of shares: Total value:
@@ -155,9 +155,9 @@ NOTE: it doesn't have to line up perfectly.
         AAPL           145.91        T          5               729.55
         TSLA           375.64        A          50              18782
         WFC            53.02         F          1368            72531.4
-        Fly            500           Y          2               1000
-
-
+        FLY            400           W          2               800
+        Final total: 
+        113114
         Process exited with code: 0
         
         */
