@@ -53,73 +53,73 @@ NOTE: it doesn't have to line up perfectly.
         
         #include <iostream> // embedded comments iostream
         #include <string>  // string
-        using namespace std; // name space std
-        struct Stock{
-            string name;
-            double initial_balance;
-            string sector;
-            double num_shares;
+        using namespace std; // name space std 
+        struct Stock{       // Stock struct
+            string name;    // string name
+            double initial_balance; // double needed for deciamls
+            string sector;   // string sector
+            double num_shares;    // double num_shares needed for decimals
             
         };
         int main()  // int main
         {
-            Stock company_ford;
-            Stock company_albert;
-            Stock company_apple;
-            Stock company_tesla;
-            Stock company_wellsfargo;
-            Stock company_userinput;
+            Stock company_ford;     // ford stock
+            Stock company_albert;    // albert stock
+            Stock company_apple;     // apple stock
+            Stock company_tesla;     // tesla stock
+            Stock company_wellsfargo;   // wellsfargo stock
+            Stock company_userinput;    // userinput data
             
-            company_ford.name = "FordM";
-            company_ford.initial_balance = 18.76;
-            company_ford.sector = "A";
-            company_ford.num_shares = 87;
+            company_ford.name = "FordM";    // ford stock name
+            company_ford.initial_balance = 18.76;  // ford stock start balance
+            company_ford.sector = "A";    // ford stock sector
+            company_ford.num_shares = 87;    // ford stock shares
             
-            double ford_balance = company_ford.initial_balance*company_ford.num_shares;
+            double ford_balance = company_ford.initial_balance*company_ford.num_shares;       // calculate total ford value
            
-            company_albert.name = "Albertsn";
-            company_albert.initial_balance = 34.39;
-            company_albert.sector = "C";
-            company_albert.num_shares = 542;
+            company_albert.name = "Albertsn";      // albert stock
+            company_albert.initial_balance = 34.39;    // albert stock start balance
+            company_albert.sector = "C";       // albert stock sector
+            company_albert.num_shares = 542;    // albert stock shares 
             
-            double albert_balance = company_albert.initial_balance*company_albert.num_shares;
+            double albert_balance = company_albert.initial_balance*company_albert.num_shares;    // calculate total albert value
             
-            company_apple.name = "AAPL";
-            company_apple.initial_balance = 145.91;
-            company_apple.sector = "T";
-            company_apple.num_shares = 5;
+            company_apple.name = "AAPL";                  // apple stock
+            company_apple.initial_balance = 145.91;       // apple stock start balance
+            company_apple.sector = "T";                    // apple stock sector
+            company_apple.num_shares = 5;                  // apple stock shares
             
-            double apple_balance = company_apple.initial_balance*company_apple.num_shares;
+            double apple_balance = company_apple.initial_balance*company_apple.num_shares;     // calculate total apple value
             
-            company_tesla.name = "TSLA";
-            company_tesla.initial_balance = 375.64;
-            company_tesla.sector = "A";
-            company_tesla.num_shares = 50;
+            company_tesla.name = "TSLA";                 // tesla stock
+            company_tesla.initial_balance = 375.64;      // tesla stock start balance
+            company_tesla.sector = "A";                  // tesla stock sector
+            company_tesla.num_shares = 50;             // tesla stock shares
             
-            double tesla_balance = company_tesla.initial_balance*company_tesla.num_shares;
+            double tesla_balance = company_tesla.initial_balance*company_tesla.num_shares;      // calculate total tesla value
             
-            company_wellsfargo.name = "WFC";
-            company_wellsfargo.initial_balance = 53.02;
-            company_wellsfargo.sector = "F";
-            company_wellsfargo.num_shares = 1368;
+            company_wellsfargo.name = "WFC";             // wells fargo stock
+            company_wellsfargo.initial_balance = 53.02;   // wells fargo stock start balance 
+            company_wellsfargo.sector = "F";                // wells fargo stock sector
+            company_wellsfargo.num_shares = 1368;          // wells fargo stock shares
             
-            double wellsfargo_balance = company_wellsfargo.initial_balance*company_wellsfargo.num_shares;
+            double wellsfargo_balance = company_wellsfargo.initial_balance*company_wellsfargo.num_shares;    // calculate total wells fargo value
             
-            cout << "Enter the company name: "<<endl;
-            cin >> company_userinput.name;
+            cout << "Enter the company name: "<<endl; // display this text
+            cin >> company_userinput.name;                // user input name
+             
+            cout << "Enter the starting balance: "<< endl;    // display this text
+            cin >> company_userinput.initial_balance;        // user input starting balance
             
-            cout << "Enter the starting balance: "<< endl;
-            cin >> company_userinput.initial_balance;
+            cout << "Enter the company sector: "<<endl;     // display this text
+            cin >> company_userinput.sector;                  // user input company sector
             
-            cout << "Enter the company sector: "<<endl;
-            cin >> company_userinput.sector;
+            cout << "Enter the number of shares:  "<<endl;     // display this text
+            cin >> company_userinput.num_shares;                // user input number of shares
             
-            cout << "Enter the number of shares:  "<<endl;
-            cin >> company_userinput.num_shares;
-            
-            double userinput_balance = company_userinput.initial_balance*company_userinput.num_shares;
-            double total_value = ford_balance + albert_balance + apple_balance + tesla_balance + wellsfargo_balance + userinput_balance;
-            cout << "Company name: "<<"Stock price:"<< " Sector:"<< " Number of shares:"<< " Total value:"<< endl;
+            double userinput_balance = company_userinput.initial_balance*company_userinput.num_shares;                   // calculates value of company inputted by user
+            double total_value = ford_balance + albert_balance + apple_balance + tesla_balance + wellsfargo_balance + userinput_balance;        // calculates total portfolio value
+            cout << "Company name: "<<"Stock price:"<< " Sector:"<< " Number of shares:"<< " Total value:"<< endl;                          // table display this text
             
             cout << company_ford.name <<"          "<< company_ford.initial_balance <<"         "<< company_ford.sector<<"          "<< company_ford.num_shares<<"              " << ford_balance << endl;
             
@@ -133,8 +133,8 @@ NOTE: it doesn't have to line up perfectly.
             
             cout << company_userinput.name <<"            "<<  company_userinput.initial_balance <<"           "<<  company_userinput.sector<<"          "<<  company_userinput.num_shares <<"               "<<  userinput_balance<< endl;
            
-            cout << "Final total: " << endl;
-            cout << total_value << endl;
+            cout << "Final total: " << endl; // display this text
+            cout << total_value << endl; // display the total portfolio value
             
         
          }
