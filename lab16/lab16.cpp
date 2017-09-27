@@ -98,10 +98,10 @@ NOTE: it doesn't have to line up perfectly.
             
             double tesla_balance = company_tesla.initial_balance*company_tesla.num_shares;
             
-            company_wellsfargo.name = "TSLA";
-            company_wellsfargo.initial_balance = 375.64;
-            company_wellsfargo.sector = "A";
-            company_wellsfargo.num_shares = 50;
+            company_wellsfargo.name = "WFC";
+            company_wellsfargo.initial_balance = 53.02;
+            company_wellsfargo.sector = "F";
+            company_wellsfargo.num_shares = 1368;
             
             double wellsfargo_balance = company_wellsfargo.initial_balance*company_wellsfargo.num_shares;
             
@@ -120,37 +120,42 @@ NOTE: it doesn't have to line up perfectly.
             double userinput_balance = company_userinput.initial_balance*company_userinput.num_shares;
             
             cout << "Company name: "<<"Stock price:"<< " Sector:"<< " Number of shares:"<< " Total value:"<< endl;
-            cout << company_ford.name <<"        "<< company_ford.initial_balance <<"    "<< company_ford.sector<<"    "<< company_ford.num_shares<<"    " << ford_balance << endl;
-            cout << company_albert.name << company_albert.initial_balance << company_albert.sector<< company_albert.num_shares << albert_balance;
             
+            cout << company_ford.name <<"          "<< company_ford.initial_balance <<"         "<< company_ford.sector<<"          "<< company_ford.num_shares<<"              " << ford_balance << endl;
+            
+            cout << company_albert.name <<"       "<<  company_albert.initial_balance <<"         "<<  company_albert.sector<<"          "<<  company_albert.num_shares <<"             "<<  albert_balance<< endl;
+            
+            cout << company_apple.name <<"           "<<  company_apple.initial_balance <<"        "<<  company_apple.sector<<"          "<<  company_apple.num_shares <<"               "<<  apple_balance<< endl;
         
+            cout << company_tesla.name <<"           "<<  company_tesla.initial_balance <<"        "<<  company_tesla.sector<<"          "<<  company_tesla.num_shares <<"              "<<  tesla_balance<< endl;
+            
+            cout << company_wellsfargo.name <<"            "<<  company_wellsfargo.initial_balance <<"         "<<  company_wellsfargo.sector<<"          "<<  company_wellsfargo.num_shares <<"            "<<  wellsfargo_balance<< endl;
+            
+            cout << company_userinput.name <<"            "<<  company_userinput.initial_balance <<"           "<<  company_userinput.sector<<"          "<<  company_userinput.num_shares <<"               "<<  userinput_balance<< endl;
            
             
             
             
-            
-          
-            
-    
-        }
+        
+         }
         
         /*
         Running /home/ubuntu/workspace/lab16/lab16.cpp
-        Enter initial investment: 50
-        Enter yearly contribution: 50
-        Enter interest rate: 5
-        What is your goal: 500
-        It took 8 years to reach your goal of 500 dollars. 
-
-        Process exited with code: 0
-        
-        Running /home/ubuntu/workspace/lab16/lab16.cpp
-        Please enter the name of the company: Ford
-        Enter the initial investment amount: 5500 
-        Enter the yearly contribution (can be 0): 0
-        Enter the interest rate (usually 0-5): 2.5
-        What is your monetary goal: 7500
-        It will take Ford 13 years to reach your goal of 7500 dollars. 
+        Enter the company name: 
+        Fly
+        Enter the starting balance: 
+        500 
+        Enter the company sector: 
+        Y
+        Enter the number of shares:  
+        2
+        Company name: Stock price: Sector: Number of shares: Total value:
+        FordM          18.76         A          87              1632.12
+        Albertsn       34.39         C          542             18639.4
+        AAPL           145.91        T          5               729.55
+        TSLA           375.64        A          50              18782
+        WFC            53.02         F          1368            72531.4
+        Fly            500           Y          2               1000
 
 
         Process exited with code: 0
