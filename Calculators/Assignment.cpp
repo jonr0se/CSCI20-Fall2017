@@ -2,9 +2,12 @@
 //April Browne
 //CSCI 020
 //9/18/2017
-
-
 /*
+
+The purpose of this lab was to create a program that calculates the speed of a jet. 
+
+
+
 Write a program that calculate the acceleration (m/s^2) of a jet fighter launched from an aircraft-carrier catapult, 
 given the jet’s takeoff speed in km/hr and the distance (meters) over which the catapult accelerates the jet from ret 
 to takeoff. Assume constant acceleration.  Also calculate the time (seconds) for the fighter to be accelerated to 
