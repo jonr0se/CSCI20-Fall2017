@@ -4,11 +4,12 @@
 //9/25/2017
 #include <iostream> // iostream
 #include <ctime> //ctime
-using namespace std;
+using namespace std; // namespace std
 
-int main ()
+int main ()    // int main
 {
-    srand(time(0));
-    cout << (rand()%100)+1<< endl;
-    return 0;
+    srand(time(0));    // srand time 0
+    cout << (rand()%100)+1<< endl;   // display rand modulo 100+1 to display values from 1-100
+    return 0;           // return 0
+
 }
