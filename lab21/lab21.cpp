@@ -3,7 +3,12 @@
 // CSCI 020
 // 9/20/2017
 /*
+The purpose of the lab was to create a wind chill calculator. An input of velocity and temperature is 
+given and four outputs are produced. The four outputs are wind speed (input), old formula output, new 
+formula output, and the difference between the two outputs. Many commands were required and the math library was used. 
+
 Problem Statement
+
 This program will output information about windchills, based on the user’s inputs of temperature and starting wind speed.  
 The table should produce columns for wind speed, the windchill according to the old formula, the windchill according to
 the new formula, and the difference between the two windchills. 
@@ -53,11 +58,27 @@ int main(){     //int main
         
 /*
 Running /home/ubuntu/workspace/lab21/lab21.cpp
+Please enter the velocity and press enter: 4
+Please enter the temperature and press enter: 30
+The wind speed is: 4.
+The old formula says: 30.5753 degrees.
+The new formula says: 25.767 degrees.
+The difference between the two is: -4.8083.
+
+
+Process exited with code: 0
+
+Running /home/ubuntu/workspace/lab21/lab21.cpp
 Please enter the velocity and press enter: 10
 Please enter the temperature and press enter: 39.25
 The wind speed is: 10.
 The old formula says: 27.8601 degrees.
 The new formula says: 32.713 degrees.
 The difference between the two is: 4.85286.
+
+
 Process exited with code: 0
+
+
+
 */
