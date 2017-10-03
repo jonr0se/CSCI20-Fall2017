@@ -1,11 +1,9 @@
 //Jon Rose
 //April Browne
 //CSCI 020
-//9/25/2017
-/*
-The objective of this lab is to create a random number generator that takes two values (from lowest to highest) and 
-swaps the values. Then the program is supposed to select a random number between the two values. 
-*/
+//10/2/2017
+
+
 #include <iostream> // iostream
 #include <ctime> //ctime
 using namespace std; // namespace std
@@ -24,13 +22,29 @@ void Swap(int& num_one, int& num_two)  // void Swap function num_one num_two
         srand(time(0));                 // srand time 0
         return rand()%(num_one-num_two) + num_two;    // random between num_x and num_y + num_x
 }
+    int PTK (int pounds){
+        int kilograms=pounds/2.21;
+            return kilograms;
+            
+        
+    }
+
+    int KTP(int kilograms){ 
+        int pounds=kilograms*2.21;
+            return pounds;
+    }
+    
+    
     int main ()            // int main
 {
-    cout<<Random(1, 10)<<endl; // display Random between 1 and 10
-    cout<<Random(5, 82)<<endl;  // display Random between 5 and 82
-    cout<<Random(22, 73)<<endl;  // display Random bewteen 22 and 73
-              
+    int random_number = Random(1,1000);
+    int kilograms_new= PTK(random_number);
+    int pounds_new= KTP(kilograms_new);
+    cout<<"The random number is: " <<endl; // display Random between 1 and 10
+    cout << random_number<<endl;
+    cout<<"Random number used as pound value and converted to kilograms: "<< endl;
+    cout<< kilograms_new<<endl;
+    cout<<"The kilogram value converted back to pounds: "<< endl;
+    cout<< pounds_new;
     
-
-
-    }
+}
