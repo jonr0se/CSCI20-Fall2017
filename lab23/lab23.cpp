@@ -26,8 +26,11 @@ void Swap(int& num_one, int& num_two)  // void Swap function num_one num_two
 }
     int main ()            // int main
 {
+    cout<<"A random number between 1 and 10 is: "<< endl;
     cout<<Random(1, 10)<<endl; // display Random between 1 and 10
+    cout<<"A random number between 5 and 82 is: "<< endl;
     cout<<Random(5, 82)<<endl;  // display Random between 5 and 82
+    cout<<"A random number between 22 and 73 is: "<< endl;
     cout<<Random(22, 73)<<endl;  // display Random bewteen 22 and 73
               
     

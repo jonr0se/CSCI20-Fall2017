@@ -20,4 +20,5 @@ int main ()    // int main
 
 cout<<RandomNumber()<<endl;        // calling RandomNumber function to display text
 
-}
+
+    }
