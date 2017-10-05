@@ -1,3 +1,7 @@
+        //Jon Rose
+        //April Browne
+        //CSCI020
+        //10/4/2017
         #include <iostream> // embedded comments iostream
         #include <string>  // string
         #include <ctime>
@@ -6,19 +10,19 @@
         class Book
         
         public:
-        void Title(string titleGiven);
+        void SetTitle(string titleGiven);
         string GetTitle() const;
         
-        void Author(string authorGiven);
+        void SetAuthor(string authorGiven);
         string GetAuthor() const;
         
-        void CopyrightYear(sting CopyrightYearGiven);
-        string CopyrightYear() const;
+        void SetCopyrightYear(string CopyrightYearGiven);
+        string GetCopyrightYear() const;
         
         void Print(){
                 cout<< "Title of book: "<< GetTitle()<< endl;
                 cout <<"Author of book:"<< GetAuthor()<<endl;
-                cout<<"Year of copyright: "<< CopyrightYear()<< endl;
+                cout<<"Year of copyright: "<< GetCopyrightYear()<< endl;
         }
         
         private:
@@ -27,7 +31,7 @@
         string copyrightyear;
         
         };
-        void Book::Title(string titleGiven){
+        void Book::SetTitle(string titleGiven){
                 title = titleGiven;
                 return;
         }
@@ -35,7 +39,7 @@
     
         return title;
         }
-        void Book::Author(string authorGiven){
+        void Book::SetAuthor(string authorGiven){
     
         author = authorGiven;
         return;
@@ -46,7 +50,7 @@
         return author;
         }
 
-        void Book::CopyrightYear(string CopyrightYear){
+        void Book::SetCopyrightYear(string CopyrightYear){
     
         copyrightyear = copyrightYearGiven;
         return;
@@ -149,3 +153,27 @@
 
                 
         }
+        /*
+        Running /home/ubuntu/workspace/lab25/lab25.cpp
+        /home/ubuntu/workspace/lab25/lab25.cpp:8:9: error: expected unqualified-id before ‘public’
+         public:
+         ^
+        /home/ubuntu/workspace/lab25/lab25.cpp:10:27: error: non-member function ‘std::string GetTitle()’ cannot have cv-qualifier
+         string GetTitle() const;
+                           ^
+        /home/ubuntu/workspace/lab25/lab25.cpp:13:28: error: non-member function ‘std::string GetAuthor()’ cannot have cv-qualifier
+         string GetAuthor() const;
+                            ^
+        /home/ubuntu/workspace/lab25/lab25.cpp:16:35: error: non-member function ‘std::string GetCopyrightYear()’ cannot have cv-qualifier
+         string GetCopyrightYear() const;
+                                   ^
+        /home/ubuntu/workspace/lab25/lab25.cpp:24:9: error: expected unqualified-id before ‘private’
+         private:
+         ^
+        /home/ubuntu/workspace/lab25/lab25.cpp:29:9: error: expected declaration before ‘}’ token
+         };
+         ^
+
+
+        Process exited with code: 1
+        /*
