@@ -7,7 +7,7 @@
         #include <ctime>
         using namespace std; // name space std
         
-        class Book
+        class Book;
         
         public:
         void SetTitle(string titleGiven);
@@ -26,9 +26,9 @@
         }
         
         private:
-        string title;
-        string author;
-        string copyrightyear;
+        string Title;
+        string Author;
+        string CopyrightYear;
         
         };
         void Book::SetTitle(string titleGiven){
@@ -153,7 +153,9 @@
 
                 
         }
+        //
         /*
+        
         Running /home/ubuntu/workspace/lab25/lab25.cpp
         /home/ubuntu/workspace/lab25/lab25.cpp:8:9: error: expected unqualified-id before ‘public’
          public:
@@ -177,3 +179,4 @@
 
         Process exited with code: 1
         /*
+        */
