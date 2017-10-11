@@ -7,7 +7,7 @@
         #include <ctime>
         using namespace std; // name space std
         
-        class Book;
+        class Book{
         
         public:
         void SetTitle(string titleGiven);
@@ -59,7 +59,7 @@
         int Book::GetCopyrightYear() const {
     
         return copyrightyear;
-        }
+        };
         int main() {
         string title = "";
         string author = "";

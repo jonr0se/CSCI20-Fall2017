@@ -42,16 +42,16 @@ Inputs:
     {
         float numb0;
         
-        double no_one = 28.55;
-        double no_two=55.87;
-        double no_three=84.12;
-        double no_four=32.31;
-        double no_five=67.89;
-        double no_six=8.47;
-        double no_seven=69.98;
-        double no_eight=57.79;
-        double no_nine=1000.00;
-        double no_ten=15.00;
+        float no_one = 28.55;
+        float no_two=55.87;
+        float no_three=84.12;
+        float no_four=32.31;
+        float no_five=67.89;
+        float no_six=8.47;
+        float no_seven=69.98;
+        float no_eight=57.79;
+        float no_nine=1000.00;
+        float no_ten=15.00;
         
         
         
@@ -59,17 +59,17 @@ Inputs:
         cin>>numb0;
         
         cout<<"Amount in tax due: "<<endl;
-        cout <<(numb0/100)*7.25<<endl;
-        cin>> (no_one/100)*7.25;
-        cin>> (no_two/100);
-        cin>> no_three;
-        cin>> no_four;
-        cin>> no_five;
-        cin>> no_six;
-        cin>> no_seven;
-        cin>> no_eight;
-        cin>> no_nine;
-        cin>> no_ten;
+        cout <<(numb0/100)*7<<endl;
+        cin>> (no_one/100)*7;
+        cin>> (no_two/100)*7;
+        cin>> no_three*7;
+        cin>> no_four*7;
+        cin>> no_five*7;
+        cin>> no_six*7;
+        cin>> no_seven*7;
+        cin>> no_eight*7;
+        cin>> no_nine*7;
+        cin>> no_ten*7;
         
     return 0;
     
