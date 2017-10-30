@@ -53,3 +53,18 @@ If the number is within the range (1-50), and the exact same value the program w
 }
 
 }
+        /*
+        Running /home/ubuntu/workspace/lab33/lab33.cpp
+        Enter a number in between: 1-50.
+        15
+        5
+        4
+        3
+        2
+        1
+        In range!
+        User entered: 15
+        42
+        Too Low!
+        Process exited with code: 0
+        */
