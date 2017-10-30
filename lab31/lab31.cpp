@@ -18,11 +18,11 @@ Use if/else and appropriate conditions to complete. ALERT: I must give partial c
                 
                 int smartCell = 0; // Variables 
                 
-                int dumbCell = 0;
+                int dumbCell = 0; // int dumbCell = 0
                 
-                int tablet = 0; 
+                int tablet = 0; // int tablet = 0
                 
-                int data = 0;
+                int data = 0; // int data = 0
                 
                 cout << "Enter the number of smart phones you desire: " << endl; // user inputs number of smart phones desired
                 cin >> smartCell;   // user input smartCell
@@ -34,24 +34,24 @@ Use if/else and appropriate conditions to complete. ALERT: I must give partial c
                 cin >> tablet;      // user input tablet 
                 
                 cout << "Enter the number of GB you desire: " << endl; // user inputs number of GB they desire
-                cin >> data;
+                cin >> data;   // user input data
                 
                 if (data == 0) { // if data is 0, this is the best option
-                cout << "Your best option is: ATT Family Plan";
+                cout << "Your best option is: ATT Family Plan";   // display this text
                 
                 }
                 
                 else if (data <= 2 && tablet == 0 && dumbCell == 0) { // if the user only desires 2 GB or lower, this is the best option 
-                cout << "Your best option is: Sprint 2GB Plan";
+                cout << "Your best option is: Sprint 2GB Plan";  // display this text
                 
                 }
                 
                 else {             // if the user desires more than 2 GB, this is the best option
-                cout << "Your best option is: ATT Unlimited Choice Plan";
+                cout << "Your best option is: ATT Unlimited Choice Plan"; // display this text
                 
                 }
                 
-                return 0; 
+                return 0; // return 0
                 
         }
                 /*
